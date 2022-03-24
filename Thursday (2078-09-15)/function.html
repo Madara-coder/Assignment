@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function</title>
+</head>
+
+<body>
+    <div class="alert"></div>
+    <script src="./index.js">
+        const body = document.querySelector(".alert")
+
+        const kaboom = () => {
+            body.append(" Bomb will explode.");
+        }
+
+
+
+        setTimeout(() => {
+            kaboom();
+        }, 3000);
+        setTimeout(() => {
+            kaboom();
+        }, 4000);
+
+        setTimeout(() => {
+            kaboom();
+        }, 5000);
+
+        setTimeout(() => {
+            kaboom();
+        }, 6e3)
+    </script>
+</body>
+
+</html>

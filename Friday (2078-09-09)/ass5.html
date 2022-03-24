@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment_5</title>
+</head>
+
+<body>
+    <script>
+        /* Print out the first, last number & second last in given Array. Given Array: [1, 23, 423, 4, 34, 5, 34, 53, 2, 34, 23, 42, 3, 34, 5, 234, 2, 43, 234, 2, 34, 234, 234, 88]*/
+
+        const arrayOfInteger = [
+            1, 23, 423, 4, 34, 5, 34, 53, 2, 34, 23, 42, 3, 34, 5, 234, 2, 43, 234,
+            2, 34, 234, 234, 88,
+        ];
+
+        // To find the length of the array
+        const length = arrayOfInteger.length;
+
+        // Output section using the template literals.
+        document.write(
+            ` The array is = ${arrayOfInteger}<br>
+             The first number in the array is = ${arrayOfInteger[0]}<br>
+             The second number in the array is = ${
+               arrayOfInteger[length - 1]
+             }<br>
+        The third number in the array is =${arrayOfInteger[length - 2]}`
+        );
+    </script>
+</body>
+
+</html>

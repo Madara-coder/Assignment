@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment_Function</title>
+</head>
+
+<body>
+    <section id="circus" style="font-size: 3rem">Welcome to my circus</section>
+
+    <button id="uppercase">🦁 Uppercase</button>
+    <button id="lowercase">🦁 LowerCase</button>
+    <script>
+        //Use of the arithmetic operators in the function...
+        //Taking input of the two numbers from the users with the help of prompt.
+        const firstNumber = prompt("Enter the first number");
+        const secondNumber = prompt("Enter the second number");
+
+        //Making of the different functions in accordance to the different arithemetical operaions...
+        //Note :- The variables or the arguments inside the different functions must be different to address any datas...
+        //Function declaration
+        function add(a, b) {
+            return console.log("The sum of the numbers is " + a + b); //Returning the value in the function...
+        }
+
+        function sub(c, d) {
+            return console.log("The difference of the numbers is " + (c - d));
+        }
+
+        function mul(e, f) {
+            return console.log("The product of the numbers is " + e * f);
+        }
+
+        function div(g, h) {
+            return console.log("The division of the numbers is " + g / h);
+        }
+
+        //Function for whether the number is odd or even...
+        function operational(i) {
+            //Using of the conditional statement to check whether the first number is even or odd...
+            if (i % 2 == 0) {
+                return console.log(i + " is the even number");
+            } else {
+                return console.log(`${i} is the odd number`); // Use of the template literals...
+            }
+        }
+
+        //Calling of function...
+        add(firstNumber, secondNumber);
+        sub(firstNumber, secondNumber);
+        mul(firstNumber, secondNumber);
+        div(firstNumber, secondNumber);
+        operational(firstNumber);
+
+        // event-listeners
+
+        const circusText = document.getElementById("circus");
+
+        const uppercaseBtn = document.getElementById("uppercase");
+        const lowercaseBtn = document.getElementById("lowercase");
+
+        uppercaseBtn.onclick = function() {
+            circusText.textContent = circusText.textContent.toUpperCase();
+        };
+        lowercaseBtn.onclick = function() {
+            circusText.textContent = circusText.textContent.toLowerCase();
+        };
+    </script>
+</body>
+
+</html>

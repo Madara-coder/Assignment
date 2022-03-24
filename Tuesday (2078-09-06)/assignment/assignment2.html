@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ass2.css" />
+    <title>Assignment2</title>
+</head>
+
+<body>
+    <div class="main">
+        <section>
+            <input id="box" placeholder="Type a String" type="text" />
+            <div class="column">
+                <div class="result">__________</div>
+                <div class="length">__________</div>
+            </div>
+            <button class="btn" id="btn1">Enter</button>
+        </section>
+        <div class="btn_main">
+            <button class="btn" id="btn2">CAPITAL</button>
+            <button class="btn" id="btn3">small</button>
+            <button class="btn" id="btn4">length</button>
+        </div>
+    </div>
+
+    <!-- Js area -->
+    <script>
+        // Assigning different id's and class to the variables...
+        const inputContent = document.querySelector("#box");
+        const result = document.querySelector(".result");
+        const length = document.querySelector(".length");
+
+        // For storing the buttons in the different variables...
+        const enterBtn = document.querySelector("#btn1");
+        const upperBtn = document.querySelector("#btn2");
+        const lowerBtn = document.querySelector("#btn3");
+        const sizeBtn = document.querySelector("#btn4");
+
+        // Function when the enter button is clicked...
+        enterBtn.onclick = function() {
+            if (isNaN(parseInt(inputContent.value))) {
+                result.textContent = inputContent.value;
+            } else {
+                const err = "error";
+                result.textContent = err;
+            }
+        };
+
+        // Function when the upper button is clicked...
+        upperBtn.onclick = function() {
+            if (result.textContent === "error") {
+                result.textContent = result.textContent;
+            } else {
+                result.textContent = result.textContent.toUpperCase(); // helps to take every character to uppercase.
+            }
+        };
+
+        // Function when the lower button is clicked...
+        lowerBtn.onclick = function() {
+            if (result.textContent === "error") {
+                result.textContent = result.textContent;
+            } else {
+                result.textContent = result.textContent.toLowerCase(); // helps to take every character to lower case.
+            }
+        };
+
+        // Function when the size buttion is clicked...
+        sizeBtn.onclick = function() {
+            if (result.textContent == "error") {
+                length.textContent = "---The error has occurred---";
+            } else {
+                const resultLength = result.textContent.length; // .length helps to find the length of the string...
+                length.textContent = resultLength;
+            }
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment_1</title>
+</head>
+
+<body>
+    <div class="main">
+        <div id="define"></div>
+    </div>
+
+    <!-- JavaScript area -->
+    <script>
+        // Entering a variable to take the id from html
+        let define = document.getElementById("define").innerHTML;
+
+        // //Using of the template literals to write the definition or to enter certain data
+        define = `
+         1.  What do you understand by the array?<br><br>
+
+        ->  Array is the collection of datas of the same data type used in programming or coding or it is a single variable that is used to store different elements.<br>
+            For example:- <br>
+            const arrayOfStrings = {"Debrath","Hritika","Ram","Shyam"};<br>
+            const arrayOfIntegers = {"1","345","543","5","3"}
+        `;
+
+        //For displaying the result
+        document.write(define);
+    </script>
+</body>
+
+</html>

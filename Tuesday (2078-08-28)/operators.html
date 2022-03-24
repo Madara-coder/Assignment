@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Just practising Javascript
+
+        //Use of arthimetic operators
+        console.log(2 * 3 - 1 + 5 / 5);
+        console.log(2 + 2 - (1 * 4) / 4);
+
+        //Practising arithemeric operators using const
+        const a = 2;
+        const b = 4;
+        const c = 6;
+        const d = 8;
+        const total = a * b + c / d;
+        console.log(total);
+
+        const number = 2;
+        console.log(number ** 4); // ** is used for power.
+
+        //For the power of
+        console.log(4 ** (2 ** (3 ** 1))); // Precendence of power is from right to left.
+
+        /*--------------------------------------------Assignment----------------------------------------
+                           Write a program to read data from the user and check if it is even or not.*/
+
+        const numberOne = parseInt(prompt("Enter a number"));
+        const remainder = numberOne % 2;
+        let decision = false; // At initial condition decision is assigned as false using false logical operator
+
+        if (remainder == 0) {
+            decision = true;
+        }
+        if (decision == true) {
+            console.log("The number ", numberOne + " is even");
+        }
+
+        //Just Thanking
+        console.log("!!Thank You!!");
+    </script>
+</body>
+
+</html>

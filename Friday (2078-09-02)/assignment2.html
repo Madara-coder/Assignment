@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <script>
+        //Write a program to ilustrate coercion
+
+        /* Note:-
+                        Coercion:- the process of automatic or implicit conversion of values from one data type to another.
+                        for eg: when the string and number are written by conversion i.e. 11 and "11"
+                        */
+
+        // Input section
+        const firstNumber = parseFloat(prompt("Enter the first number"));
+        const secondNumberInString = prompt("Enter the second number");
+
+        // Arithmetic operations
+        const add = firstNumber + secondNumberInString; // The numbers are concatinated
+        const sub = firstNumber - secondNumberInString; //General diff is performed
+        const mul = firstNumber * secondNumberInString; //General mul is performed
+        const div = firstNumber / secondNumberInString; // General div is performed
+
+        // Console log section...
+        console.log(add);
+        console.log(sub);
+        console.log(mul);
+        console.log(div);
+    </script>
+</body>
+
+</html>

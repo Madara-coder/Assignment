@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment_2</title>
+</head>
+
+<body>
+    <div class="main_class">
+        <div id="define_main"></div>
+    </div>
+
+    <script>
+        //Difference between array and string...
+        let defineMain = document.getElementById("define_main").innerHTML;
+        defineMain = `
+                <h1>Array vs String<br></h1>
+        1. Array is the collection of the datas having same datatypes but string is the collection of the characters or words.<br>
+        2. Array is denoted by the array literals i.e. "[]" whereas string is denoted by "" or ''<br>
+        3. Push and pop function can be used in the array but not in string<br>
+        4. Array have a fixed length, while string do not.<br>
+        5. Array is the data structure whereas string is an object.`;
+
+        //document.write area
+        document.write(defineMain);
+    </script>
+</body>
+
+</html>

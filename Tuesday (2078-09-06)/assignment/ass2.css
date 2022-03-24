@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    top: 250px;
+    left: 650px;
+}
+
+#box {
+    padding: 10px;
+}
+
+.result,
+.length {
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px;
+    margin: 5px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment _1</title>
+</head>
+
+<body>
+    <section>
+        <div id="firstString"></div>
+        <div id="secondString"></div>
+    </section>
+
+    <script>
+        // Write a program to demonstrate append & prepend using template literals & dom manupulation
+        /*Note:-
+                    prepend -> it means to insert any specified content at the beginning of the selected elements.
+                    append -> it means to insert any specified content at the end of the selected elements.*/
+
+        // Taking elements by id in js  from the div of the HTML
+        const firstString = document.getElementById("firstString");
+        const secondString = document.getElementById("secondString");
+
+        // Keeping certain words or strings in the different variables.
+        const firstWord = "I       ";
+        const secondWord = "     Love";
+        const thirdWord = " You";
+
+        // Placing of the above words properly using trim ...
+        firstString.textContent = firstWord + secondWord.trim() + thirdWord;
+        secondString.innerHTML = `!! ${firstWord} ${secondWord} ${thirdWord} so much !!`; // Use of the template literals...
+
+        // The output of thirdString using document.write...
+        document.write(thirdString.textContent);
+    </script>
+</body>
+
+</html>

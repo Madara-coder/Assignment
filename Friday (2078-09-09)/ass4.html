@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment_4</title>
+</head>
+
+<body>
+    <div class="main">
+        <div id="define"></div>
+    </div>
+    <script>
+        // Copare index and length...
+        // Entering a variable to take the id from html
+        let define = document.getElementById("define").innerHTML;
+
+        // //Using of the template literals to write the definition or to enter certain data
+        define = `
+ <h3>1. Compare the differences between index and length.<br><br></h3>
+
+->  Index begins from 0 whereas length begins from 1.<br>
+->  Index helps to find the location of the element in the array whereas length helps to find the length of the array.<br>
+->  Eg of Index:- const Array = [2,,55,7,5,4,454,34,3,22];   Array[5]; Output = 4<br>
+->  Eg of Length:- const Array = [2,,55,7,5,4,454,34,3,22];  Array.length; Output = 10
+`;
+
+        //For displaying the result
+        document.write(define);
+    </script>
+</body>
+
+</html>

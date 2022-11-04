@@ -13,3 +13,5 @@ setTimeout(function() {
     audio.play();
     clearInterval(time); // used to close the interval time which is defined in variable time.
 }, 5 * 1000); // where 5000 is 5 second
+
+
